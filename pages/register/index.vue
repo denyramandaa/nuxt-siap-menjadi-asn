@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full min-h-screen flex items-center justify-center">
+    <div class="w-full min-h-screen flex items-center justify-center bg-white">
         <div class="w-full max-w-[1064px] flex">
             <div class="w-2/5">
                 <img src="~/assets/images/home-login.webp" alt="login banner">
@@ -43,7 +43,7 @@
                                 <div class="flex items-center justify-between">
                                     <p class="text-[#1A233A] text-[14px]">Dengan klik tombol “Selanjutnya”, saya menyetujui <a href="#" class="text-[#2B7DEB] font-medium">Aturan Penggunaan dan Kebijakan Privasi SiapJadiASN</a></p>
                                 </div>
-                                <button type="submit" class="w-full text-white rounded-[4px] bg-[#2B7DEB] py-[10px] text-[14px]">Selanjutnya</button>
+                                <NuxtLink to="/informasi-data-diri" class="block text-center w-full text-white rounded-[4px] bg-[#2B7DEB] py-[10px] text-[14px]">Selanjutnya</NuxtLink>
                                 <p class="text-[14px] text-[#7C818C] text-center">
                                     Sudah punya akun? <NuxtLink to="/login" class="font-medium text-[#2B7DEB] hover:underline">Masuk</NuxtLink>
                                 </p>

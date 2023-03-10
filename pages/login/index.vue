@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full min-h-screen flex items-center justify-center">
+    <div class="w-full min-h-screen flex items-center justify-center bg-white">
         <div class="w-full max-w-[1064px] flex">
             <div class="w-2/5">
                 <img src="~/assets/images/home-login.webp" alt="login banner">
