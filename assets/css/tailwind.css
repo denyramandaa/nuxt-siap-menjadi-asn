@@ -9,6 +9,66 @@ body {
     background-color: #F0F3F8;
 }
 
+.bg-ornament::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    background-image: url(../images/orn-left-top.png), url(../images/orn-left-bottom.png), url(../images/orn-right-top.png), url(../images/orn-right-bottom.png);
+    background-size: 40% auto, 50% auto, 22% auto, auto 100%; 
+    background-position: top left, bottom left, 70% 0, bottom right;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    z-index: -1;
+}
+
+.timeline--line {
+    height: 3px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    background-color: #F5FAFF;
+}
+.timeline--line-color::before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #2B7DEB;
+    transition: all .4s cubic-bezier(.46,.54,.17,1);
+}
+.timeline--line-color.half::before {
+    width: 50%;
+}
+.timeline--line-color.full::before {
+    width: 100%;
+}
+.sliderSection--slide {
+    position: relative;
+    left: 0;
+    transform: translateX(0);
+    transition: transform .4s cubic-bezier(.46,.54,.17,1),-webkit-transform .4s cubic-bezier(.46,.54,.17,1);
+}
+select{
+    background: url(../images/arrow-down.svg) no-repeat right #ddd;
+    -webkit-appearance: none;
+    background-position: right 10px center;
+    background-size: 12px auto;
+}
+.toMiddle {
+    transform: translateX(-25%);
+}
+.toEnd {
+    transform: translateX(-50%);
+}
+
+
 @layer components {
     .myBtn {
         @apply bg-[#12b488] text-white px-3 py-2 rounded-md text-sm;

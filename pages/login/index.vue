@@ -1,15 +1,15 @@
 <template>
-    <div class="w-full min-h-screen flex items-center justify-center bg-white">
+    <div class="w-full min-h-screen flex items-center justify-center bg-ornament">
         <div class="w-full max-w-[1064px] flex">
             <div class="w-2/5">
                 <img src="~/assets/images/home-login.webp" alt="login banner">
             </div>
-            <div class="w-3/5 px-[62px] flex justify-center items-center">
+            <div class="w-3/5 px-[62px] flex justify-center items-center bg-white">
                 <div class="w-full">
                     <h1 class="mb-8">
                         <img src="~/assets/images/siapjadiASN-logo.svg" alt="siapjadiASN logo">
                     </h1>
-                    <div class="w-full px-16 py-10">
+                    <div class="w-full px-16 py-10 rounded-[20px]" style="box-shadow: 0px 4px 40px 0px #ACABB61A">
                         <h2 class="mb-3 font-medium text-[#1A233A] text-[20px]">Login dengan Akun</h2>
                         <p class="text-[#7C818C] text-[14px] mb-[30px]">Masukkan email/username dan password untuk login</p>
                         <div class="w-full">
@@ -36,7 +36,7 @@
                                     </div>
                                     <a href="#" class="text-[14px] font-medium text-[#2B7DEB] hover:underline">Lupa Password?</a>
                                 </div>
-                                <button type="submit" class="w-full text-white rounded-[4px] bg-[#2B7DEB] py-[10px] text-[14px]">Masuk</button>
+                                <nuxt-link to="/selamat-datang"><app-button text="Masuk" :primary="true" class="w-full mt-[30px]" /></nuxt-link>
                                 <p class="text-[14px] text-[#7C818C] text-center">
                                     Belum punya akun? <NuxtLink to="/register" class="font-medium text-[#2B7DEB] hover:underline">Daftar</NuxtLink>
                                 </p>
