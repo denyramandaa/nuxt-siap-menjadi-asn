@@ -1,15 +1,15 @@
 <template>
-    <div class="w-full min-h-screen flex items-center justify-center bg-white">
+    <div class="w-full min-h-screen flex items-center justify-center bg-ornament">
         <div class="w-full max-w-[1064px] flex">
             <div class="w-2/5">
-                <img src="~/assets/images/home-login.webp" alt="login banner">
+                <img src="~/assets/images/home-login.webp" alt="login banner" class="h-full object-cover">
             </div>
-            <div class="w-3/5 px-[62px] flex justify-center items-center">
+            <div class="w-3/5 px-[62px] py-[40px] flex justify-center items-center bg-white">
                 <div class="w-full">
                     <h1 class="mb-8">
                         <img src="~/assets/images/siapjadiASN-logo.svg" alt="siapjadiASN logo">
                     </h1>
-                    <div class="w-full px-16">
+                    <div class="w-full py-10 px-16 bg-white rounded-[14px]" style="box-shadow: 0px 4px 40px 0px #ACABB61A">
                         <h2 class="mb-3 font-medium text-[#1A233A] text-[20px]">Daftar</h2>
                         <p class="text-[#7C818C] text-[14px] mb-[30px]">Daftar untuk bisa mengerjakan Try Out di siapjadiASN</p>
                         <div class="w-full">
@@ -43,7 +43,7 @@
                                 <div class="flex items-center justify-between">
                                     <p class="text-[#1A233A] text-[14px]">Dengan klik tombol “Selanjutnya”, saya menyetujui <a href="#" class="text-[#2B7DEB] font-medium">Aturan Penggunaan dan Kebijakan Privasi SiapJadiASN</a></p>
                                 </div>
-                                <NuxtLink to="/informasi-data-diri" class="block text-center w-full text-white rounded-[4px] bg-[#2B7DEB] py-[10px] text-[14px]">Selanjutnya</NuxtLink>
+                                <NuxtLink to="/selamat-datang" class="block text-center w-full text-white rounded-[4px] bg-[#2B7DEB] py-[10px] text-[14px]">Selanjutnya</NuxtLink>
                                 <p class="text-[14px] text-[#7C818C] text-center">
                                     Sudah punya akun? <NuxtLink to="/login" class="font-medium text-[#2B7DEB] hover:underline">Masuk</NuxtLink>
                                 </p>

@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full py-4 bg-white fixed top-0 left-0">
+    <div class="w-full py-4 px-[20px] bg-white sticky top-0 left-0 z-10">
         <div class="w-full max-w-[1020px] mx-auto flex items-center justify-between">
             <h1>
                 <img src="~/assets/images/siapjadiASN-logo.svg" alt="siapjadiASN logo">
